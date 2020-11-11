@@ -11,7 +11,7 @@
    <img src="https://img.shields.io/github/license/maxam2017/hotpink?style=flat-square"/>
 </p>
 
-# Overview
+## Overview
 IMO making animation is more easy to write in imperative way, even though declaratively handle UI is awesome like ReactJS.
 
 ## Feature

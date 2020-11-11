@@ -16,7 +16,7 @@ const titleEl = document.querySelector('#title');
   await curtainEl.bindAnimation('slideInRight');
   curtainEl.style.transform = 'translate3d(0, 0, 0)';
   await curtainEl.bindAnimation('shrink');
-  curtainEl.style.width = '150px';
+  curtainEl.style.width = '20vw';
 
   await titleEl.bindAnimation('fadeInBottom');
   titleEl.style.opacity = 1;
