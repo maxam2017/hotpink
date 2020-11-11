@@ -9,7 +9,7 @@
 
 @keyframes shrink {
   to {
-    width: 20vw;
+    transform: scaleX(.2);
   }
 }
 
