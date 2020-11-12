@@ -3,7 +3,7 @@ import wait from './utils/wait';
 /**
  * bind animation method on dom element
  */
-HTMLElement.prototype.bindAnimation = async function (animation, time = 1000) {
+Element.prototype.bindAnimation = async function (animation, time = 1000) {
   this.style.animation = `${animation} ${time}ms`;
   await wait(time);
   this.style.animation = '';
@@ -11,10 +11,14 @@ HTMLElement.prototype.bindAnimation = async function (animation, time = 1000) {
 
 const curtainEl = document.querySelector('#curtain');
 const titleEl = document.querySelector('#title');
+const ecgEl = document.querySelector('#ecg');
 
 (async () => {
   await curtainEl.bindAnimation('slideInRight');
   curtainEl.style.transform = 'translate3d(0, 0, 0)';
+
+  await ecgEl.bindAnimation('ecg', 1500);
+
   await curtainEl.bindAnimation('shrink');
   curtainEl.style.transform += ' scaleX(.2)';
 

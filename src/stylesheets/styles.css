@@ -5,6 +5,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
   width: 100vw;
   height: 100%;
   background: hotpink;
@@ -20,4 +22,19 @@
 #title {
   opacity: 0;
   margin: 0;
+}
+
+#curtain > svg {
+  width: 100%;
+}
+
+#ecg {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: miter;
+	opacity: 0;
+	stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
 }
